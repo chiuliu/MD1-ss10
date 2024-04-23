@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let a = +prompt("Nhập số thứ nhất : ");
+      let b = +prompt("Nhập số thứ hai : ");
+      let c = +prompt("Nhập số thứ ba : ");
+
+      let max = a;
+      if (a > b && a > c) {
+        alert("Số lớn nhất là " + max);
+      } else if (a <= b) {
+        if (b <= c) {
+          max = c;
+          alert("Số lớn nhất là " + max);
+        } else {
+          max = b;
+          alert("Số lớn nhất là " + max);
+        }
+      }
+    </script>
+  </body>
+</html>

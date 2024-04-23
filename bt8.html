@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let n = +prompt("Mời bạn nhập số phần tử :");
+      let num = [];
+      for (let i = 0; i < n; i++) {
+        let x = +prompt(`Mời bạn nhập phần tử thứ ${i + 1}`);
+        num[i] = x;
+      }
+
+      let max = num[0];
+      for (let j = 1; j < n; j++) {
+        if (max < num[j]) {
+          max = num[j];
+        }
+      }
+      alert("Số lớn nhất là :" + max);
+    </script>
+  </body>
+</html>
